@@ -144,6 +144,14 @@ module.exports = {
 						 .end()
 						 
 		webpackConfig.module.rule('ts')
+		webpackConfig.module.rule('ts') 
+		                    .exclude
+			                 .add(/node_modules/)
+			                 .add(/@vue\/cli-service/)
+							 .end()
+							.include
+							 .add(resolve('src'))
+							 .end()
 		webpackConfig.module.rule('ts').use('ts-loader')		
 		webpackConfig.module.rule('ts').use('babel-loader')					  
 		webpackConfig.module.rule('ts').use('cache-loader')					   
