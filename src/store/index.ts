@@ -15,9 +15,8 @@ const store: Store<any> = new Vuex.Store({
   getters,
   state,
   modules: {
-    //添加自定义模块
+    // 添加自定义模块
   }
 })
 
-export default store ;
-
+export default store
