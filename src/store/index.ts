@@ -9,7 +9,7 @@ import getters from './getters'
 
 Vue.use(Vuex)
 
-const store: Store<any> = new Vuex.Store({
+const store: Store<any> = new Store({
   actions,
   mutations,
   getters,

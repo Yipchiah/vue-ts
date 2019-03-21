@@ -666,7 +666,7 @@ module.exports = {
     'no-unused-labels': 2,
 
     // 禁止定义不使用的变量
-    'no-unused-vars': [0,
+    'no-unused-vars': [2,
       {
         'vars': 'all', // 变量定义必须被使用
         'args': 'none', // 对于函数形参不检测
@@ -770,7 +770,7 @@ module.exports = {
 
     // 声明后不再修改的变量必须使用 const
     // @off 没必要
-    'prefer-const': 0,
+    'prefer-const': 2,
 
     // 必须使用解构
     // @off 没必要

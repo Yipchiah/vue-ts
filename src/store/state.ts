@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import { RootStateTypes } from './types'
 const state: RootStateTypes = {
   author: '陈小生'

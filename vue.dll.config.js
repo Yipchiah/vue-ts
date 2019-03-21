@@ -75,7 +75,16 @@ const webpackConfig = {
           warnings: false
         }
       }
+    }),
+    new webpack.optimize.SplitChunksPlugin({
+      chunks: "all",
+      minSize: 20,
+      minChunks: 1,
+      maxAsyncRequests: 5,
+      maxInitialRequests: 3,
+      name: true
     })
+ 
 
   ]
 }
